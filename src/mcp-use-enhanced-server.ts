@@ -8,8 +8,8 @@ import { z } from "zod";
 const execAsync = promisify(exec);
 
 const config = {
-  railsRoot: process.env.RAILS_ROOT || "./fullstack-rails",
-  railsService: process.env.RAILS_SERVICE || "fullstack",
+  railsRoot: process.env.RAILS_ROOT || "./",
+  railsService: process.env.RAILS_SERVICE || "app",
   dockerMode: process.env.USE_DOCKER === "true",
   redisUrl: process.env.REDIS_URL || "redis://localhost:6379",
 };
